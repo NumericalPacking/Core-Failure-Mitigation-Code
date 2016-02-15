@@ -1,7 +1,7 @@
 #include "main_funcs.h"
 extern "C" void openblas_set_num_threads(int);
 using namespace std;
-//Checksum implementation. 3 nodes for data
+//Checksum implementation assuming no failure
 int main (int argc, char *argv[])
 {
 	if(argc<4)
