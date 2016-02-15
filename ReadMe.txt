@@ -7,9 +7,9 @@ We have attached in this folder the source code for the Amazon AWS image matchin
 
 
 The folder contains the source code for:	*Failure_intolerant_implementation.c
-											*Checksum_implementation.c 
-											*Checksum_implementation_nofailure.c and 
-											*Proposed_implementation.c.
+						*Checksum_implementation.c 
+						*Checksum_implementation_nofailure.c and 
+						*Proposed_implementation.c.
 	It also contains a sample vlad-processed image database with seven hundred and seventeen 8192-length VLAD image signatures (717-by-8192 matrix) 
 										
 We assume a 5-node Linux parallel computing cluster with four threads per node.
@@ -26,7 +26,7 @@ The compiled code can be executed by specifying the following paramenters (provi
 
 mpirun -np [num_nodes] ./gemm [timestorun] [query_size] [dbsize]
 
-where:  [filename] - any of the sourcecodes
-	    [timestorun] - times to run the code for an average execution times
-		[query_size] - size of query: 0<query_size<dbsize. 
-		[dbsize]	- size of the image database 
+where:  [filename] 	- any of the sourcecodes
+	[timestorun] 	- times to run the code for an average execution times
+	[query_size] 	- size of query: 0<query_size<dbsize. 
+	[dbsize]	- size of the image database 
